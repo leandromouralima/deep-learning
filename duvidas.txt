@@ -1,0 +1,20 @@
+Porque passar um vetor de (64,784) imputs de uma vez?
+Porque não passar uma figura de cada vez?
+
+Porque ler em batches de 64 figuras?
+
+Pytorch tem describe
+
+Foward Pass - Get the outputs
+Calculate the loss - With the right answers
+Calculate the weights gradients of dloss/dw1 - backpropagation
+Update the weigths with gradient descent (Stochastic Gradient Descent SGD)
+
+And the bias?
+Does it update the weights on all levels?
+Using batches of 64 images it passses through all the available images (938 batches).
+The losses are been reduced every batch, but the scrip shows only the mean loss of the whole epoch.
+Can I do one epoch at a single interation? Is it too much memory consuming? What is the optimum batch?
+
+Remember to clear the gradients
+optimizer.zero_grad()
